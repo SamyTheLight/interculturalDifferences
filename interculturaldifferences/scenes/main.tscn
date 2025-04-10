@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://4ytaonukr2xf"]
+
+[ext_resource type="PackedScene" uid="uid://c3cdyt0nnhjy" path="res://scenes/platform.tscn" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://dkrirybs4ixjr" path="res://scenes/player.tscn" id="2_sugp2"]
+[ext_resource type="Script" uid="uid://bny8tdnt0tlhn" path="res://scripts/cameraFollow.gd" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dtalmvxeb7hey" path="res://scenes/npc_monster.tscn" id="4_jyhfs"]
+
+[node name="Main" type="Node2D"]
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("1_0wfyh")]
+position = Vector2(2000, 540)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_0wfyh")]
+position = Vector2(390, 540)
+
+[node name="npc_monster" parent="." instance=ExtResource("4_jyhfs")]
+position = Vector2(250, 421)
+word = "Bonjour!"
+
+[node name="npc_monster2" parent="." instance=ExtResource("4_jyhfs")]
+position = Vector2(600, 418)
+word = "comment vas-tu?"
+
+[node name="npc_monster3" parent="." instance=ExtResource("4_jyhfs")]
+position = Vector2(900, 419)
+word = "Bonne journée!"
+
+[node name="Player" parent="." instance=ExtResource("2_sugp2")]
+position = Vector2(-36, 440)
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("object_to_follow")]
+script = ExtResource("3_sugp2")
+object_to_follow = NodePath("../Player")
