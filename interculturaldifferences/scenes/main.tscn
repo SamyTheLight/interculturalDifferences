@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://4ytaonukr2xf"]
+[gd_scene load_steps=8 format=3 uid="uid://4ytaonukr2xf"]
 
 [ext_resource type="PackedScene" uid="uid://c3cdyt0nnhjy" path="res://scenes/platform.tscn" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://dkrirybs4ixjr" path="res://scenes/player.tscn" id="2_sugp2"]
 [ext_resource type="Script" uid="uid://bny8tdnt0tlhn" path="res://scripts/cameraFollow.gd" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://dtalmvxeb7hey" path="res://scenes/npc_monster.tscn" id="4_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://4w7iqx74lwgy" path="res://assets/character_round_purple.png" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://deihyyqvumioo" path="res://dialogues/actionable.tscn" id="6_tefeu"]
+[ext_resource type="Resource" uid="uid://ccc640urh8tyt" path="res://dialogues/test.dialogue" id="7_o6xl0"]
 
 [node name="Main" type="Node2D"]
 
@@ -31,3 +34,11 @@ position = Vector2(-36, 440)
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("object_to_follow")]
 script = ExtResource("3_sugp2")
 object_to_follow = NodePath("../Player")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(54, 436)
+texture = ExtResource("5_tbgi4")
+
+[node name="Actionable" parent="Sprite2D" instance=ExtResource("6_tefeu")]
+scale = Vector2(1.62046, 2.3113)
+dialogue_resource = ExtResource("7_o6xl0")

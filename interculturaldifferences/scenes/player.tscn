@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://dkrirybs4ixjr"]
+[gd_scene load_steps=5 format=3 uid="uid://dkrirybs4ixjr"]
 
 [ext_resource type="Texture2D" uid="uid://4w7iqx74lwgy" path="res://assets/character_round_purple.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://bwxy4ewidulmy" path="res://scripts/player.gd" id="1_g2els"]
@@ -6,6 +6,8 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g2els"]
 radius = 20.0
 height = 62.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_g2els")
@@ -15,3 +17,14 @@ texture = ExtResource("1_3vyb7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_g2els")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+
+[node name="ActionablaFinder" type="Area2D" parent="Marker2D"]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Marker2D/ActionablaFinder"]
+scale = Vector2(7.18573, 2.88517)
+shape = SubResource("CircleShape2D_g2els")
