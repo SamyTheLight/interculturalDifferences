@@ -36,7 +36,7 @@ script = ExtResource("3_sugp2")
 object_to_follow = NodePath("../Player")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(54, 436)
+position = Vector2(83, 442)
 texture = ExtResource("5_tbgi4")
 
 [node name="Actionable" parent="Sprite2D" instance=ExtResource("6_tefeu")]

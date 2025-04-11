@@ -8,13 +8,15 @@ extends CharacterBody2D
 @onready var sprite = $Sprite2D
 
 func _unhandled_input(event: InputEvent) -> void:
-	if GLOBAL.can_move and Input.is_action_just_pressed("ui_accept"):
+	if GLOBAL.can_move and Input.is_action_just_pressed("interact"):
 		var actionables = actionable_finder.get_overlapping_areas()
 		if actionables.size() > 0:
 			actionables[0].action()
 			return
 
 func _physics_process(delta):
+	if not GLOBAL.can_move:
+		return
 	# Gravedad
 	if not is_on_floor():
 		velocity.y += gravity * delta

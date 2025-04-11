@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2tkxbfleohxm"]
+
+[ext_resource type="Script" uid="uid://dlymx2phqgoab" path="res://scripts/npc.gd" id="1_7n8xq"]
+[ext_resource type="Texture2D" uid="uid://4w7iqx74lwgy" path="res://assets/character_round_purple.png" id="1_rv78h"]
+[ext_resource type="PackedScene" uid="uid://deihyyqvumioo" path="res://dialogues/actionable.tscn" id="2_7n8xq"]
+
+[node name="Npc" type="Node2D"]
+script = ExtResource("1_7n8xq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(2, 1)
+texture = ExtResource("1_rv78h")
+
+[node name="Actionable" parent="Sprite2D" instance=ExtResource("2_7n8xq")]
+unique_name_in_owner = true
+scale = Vector2(1.62046, 2.3113)

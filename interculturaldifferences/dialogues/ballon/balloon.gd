@@ -1,8 +1,7 @@
 extends CanvasLayer
 
-@export var next_action: StringName = &"ui_interact"
+@export var next_action: StringName = &"interact"
 @export var skip_action: StringName = &"ui_cancel"
-@onready var portrait: TextureRect = %Portrait
 
 var resource: DialogueResource
 var temporary_game_states: Array = []
@@ -17,6 +16,7 @@ var dialogue_line: DialogueLine:
 			dialogue_line = value
 			apply_dialogue_line()
 		else:
+			GLOBAL.can_move = true
 			queue_free()
 	get:
 		return dialogue_line
@@ -49,6 +49,7 @@ func _notification(what: int) -> void:
 			dialogue_label.skip_typing()
 
 func start(dialogue_resource: DialogueResource, title: String, extra_game_states: Array = []) -> void:
+	GLOBAL.can_move = false
 	temporary_game_states = [self] + extra_game_states
 	is_waiting_for_input = false
 	resource = dialogue_resource
@@ -63,19 +64,6 @@ func apply_dialogue_line() -> void:
 
 	character_label.visible = not dialogue_line.character.is_empty()
 	character_label.text = tr(dialogue_line.character, "dialogue")
-
-	var portrait_path: String = "res://assets/characters/%s_%s.png" % [dialogue_line.character.to_lower(), dialogue_line.get_tag_value("mood").to_lower()]
-	if FileAccess.file_exists(portrait_path):
-		portrait.visible = true
-		portrait.texture = load(portrait_path)
-	else:
-		portrait_path = "res://assets/characters/%s.png" % [dialogue_line.character.to_lower()]
-		if FileAccess.file_exists(portrait_path):
-			portrait.visible = true
-			portrait.texture = load(portrait_path)
-		else:
-			portrait.visible = false
-			portrait.texture = null
 
 	dialogue_label.hide()
 	dialogue_label.dialogue_line = dialogue_line

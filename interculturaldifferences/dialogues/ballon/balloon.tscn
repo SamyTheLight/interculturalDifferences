@@ -47,24 +47,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Portrait" type="TextureRect" parent="Balloon"]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(500, 400)
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -485.0
-offset_top = -692.0
-offset_right = 15.0
-offset_bottom = -292.0
-grow_horizontal = 0
-grow_vertical = 0
-scale = Vector2(0.906375, 1.7203)
-expand_mode = 1
-
 [node name="Panel" type="Panel" parent="Balloon"]
 clip_children = 2
 layout_mode = 1
@@ -120,10 +102,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -147.0
-offset_top = -258.0
-offset_right = 103.0
-offset_bottom = -189.0
+offset_left = 281.0
+offset_top = -259.0
+offset_right = 531.0
+offset_bottom = -190.0
 grow_horizontal = 2
 grow_vertical = 0
 
