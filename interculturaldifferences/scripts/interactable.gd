@@ -1,13 +1,17 @@
+@tool
 extends Node2D
 
-@export var texture: Texture2D
+@export var texture: Texture2D:
+	set(value):
+		texture = value
+		if $Sprite2D:
+			$Sprite2D.texture = texture
 
 var player_in_area = false
-func _ready():
-	var body = $Sprite2D
-	if body:
-		body.texture = texture
 
+func _ready():
+	if not Engine.is_editor_hint():
+		$Sprite2D.texture = texture
 
 func _process(delta):
 	if player_in_area and Input.is_action_just_pressed("interact"):
