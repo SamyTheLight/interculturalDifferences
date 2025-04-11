@@ -66,10 +66,19 @@ func apply_dialogue_line() -> void:
 	character_label.text = tr(dialogue_line.character, "dialogue")
 
 	dialogue_label.hide()
-	dialogue_label.dialogue_line = dialogue_line
+	#dialogue_label.dialogue_line = dialogue_line
+	var dl = dialogue_line
+	dl.text = Language.filtrar_letras(dl.text)
+	dialogue_label.dialogue_line = dl
 
 	responses_menu.hide()
-	responses_menu.responses = dialogue_line.responses
+	#responses_menu.responses = dialogue_line.responses
+	var respuestas_traducidas = []
+	for r in dialogue_line.responses:
+		r.text = Language.filtrar_letras(r.text)
+		respuestas_traducidas.append(r)
+	responses_menu.responses = respuestas_traducidas
+
 
 	balloon.show()
 	will_hide_balloon = false

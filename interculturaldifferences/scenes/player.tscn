@@ -1,7 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkrirybs4ixjr"]
+[gd_scene load_steps=9 format=3 uid="uid://dkrirybs4ixjr"]
 
-[ext_resource type="Texture2D" uid="uid://4w7iqx74lwgy" path="res://assets/character_round_purple.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://bwxy4ewidulmy" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://b53o8wf8plfpk" path="res://assets/character/standing/1.png" id="2_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://cjhhttwdxlv6" path="res://assets/character/standing/2.png" id="3_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://csqvncymrk8px" path="res://assets/character/standing/3.png" id="4_fjrip"]
+[ext_resource type="Texture2D" uid="uid://bolnmd74vwcb4" path="res://assets/character/standing/4.png" id="5_smehm"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_ur7pv"]
+frames = 4
+speed_scale = 5.0
+frame_0/texture = ExtResource("2_qlg0r")
+frame_1/texture = ExtResource("3_tuyoq")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4_fjrip")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("5_smehm")
+frame_3/duration = 1.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g2els"]
 radius = 20.0
@@ -13,7 +27,8 @@ height = 62.0
 script = ExtResource("1_g2els")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_3vyb7")
+scale = Vector2(2.5288, 2.5288)
+texture = SubResource("AnimatedTexture_ur7pv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_g2els")

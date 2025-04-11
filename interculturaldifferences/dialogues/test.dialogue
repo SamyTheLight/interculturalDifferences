@@ -1,6 +1,7 @@
 ~ start
-Nathan: pa onde
+Nathan: pa donde?
 - city
 - sorry 
 - idk
+set Language.known_letters.merge({"a": true, "o": true, "d": true}, true)
 => END
