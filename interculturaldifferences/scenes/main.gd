@@ -2,7 +2,6 @@ extends Node2D
 
 func _ready() -> void:
 	$AnimatedSprite2D.play("default")
-	$AudioStreamPlayer2D.play()
 	GLOBAL.the_end.connect(_on_the_end)
 	
 func _on_the_end(data):
