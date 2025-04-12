@@ -52,9 +52,10 @@ texture = ExtResource("1_rv78h")
 
 [node name="Actionable" parent="Sprite2D" instance=ExtResource("2_7n8xq")]
 unique_name_in_owner = true
-scale = Vector2(0.490624, 1.11399)
+scale = Vector2(0.376939, 2.56678)
 
 [node name="Interaction" type="Sprite2D" parent="Sprite2D"]
+visible = false
 position = Vector2(1.19209e-07, -32)
 scale = Vector2(0.944779, 0.944779)
 texture = ExtResource("4_7n8xq")

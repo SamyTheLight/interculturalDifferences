@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://8hdtkkq8wpm0"
+path="res://.godot/imported/hatGuy.dialogue-b8ea51b86a94c07c3f101652a79126f3.tres"
+
+[deps]
+
+source_file="res://dialogues/hatGuy.dialogue"
+dest_files=["res://.godot/imported/hatGuy.dialogue-b8ea51b86a94c07c3f101652a79126f3.tres"]
+
+[params]
+
+defaults=true

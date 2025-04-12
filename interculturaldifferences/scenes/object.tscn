@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://6im0gonf4m1"]
+
+[ext_resource type="Script" uid="uid://dm27v632e21or" path="res://scenes/object.gd" id="2_a0y2b"]
+
+[node name="Light" type="Node2D"]
+scale = Vector2(0.626377, 0.626377)
+script = ExtResource("2_a0y2b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

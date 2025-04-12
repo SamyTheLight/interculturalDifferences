@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://buo3vbdyduph3"
+path="res://.godot/imported/spider.dialogue-55c2bebb336c38ac572afb6488bb859d.tres"
+
+[deps]
+
+source_file="res://dialogues/spider.dialogue"
+dest_files=["res://.godot/imported/spider.dialogue-55c2bebb336c38ac572afb6488bb859d.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,10 @@
+~ start
+Spider: I want to go to a party!
+if not GLOBAL.important_words['want'] and  not GLOBAL.important_words['to'] and  not GLOBAL.important_words['go']
+	- Those's letters sounds like 'want', 'to' and ...'go'?
+	set Language.known_letters.merge({"w": true,"n": true, "g": true, "a": true, "t": true}, true)
+	set GLOBAL.important_words['want'] = true
+	set GLOBAL.important_words['to'] = true
+	set GLOBAL.important_words['go'] = true
+	Spider: I want to go to a party!
+=> END
