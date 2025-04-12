@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://d17tap0xchcgo" path="res://scenes/interactable.tscn" id="7_tipki"]
 [ext_resource type="PackedScene" uid="uid://d2tkxbfleohxm" path="res://scenes/npc.tscn" id="8_85g3d"]
 [ext_resource type="Texture2D" uid="uid://diivmoij1shlo" path="res://assets/npc/barquero/4.png" id="8_jkv2x"]
-[ext_resource type="Texture2D" uid="uid://2khvkwhubf68" path="res://assets/TileSetPlatforms.png" id="9_85g3d"]
+[ext_resource type="Texture2D" uid="uid://dxtnov5ytl24y" path="res://assets/tiles/TileSetPlatforms.png" id="9_85g3d"]
 [ext_resource type="Texture2D" uid="uid://ctsc1gkuejhh8" path="res://icon.svg" id="9_choun"]
 [ext_resource type="Texture2D" uid="uid://b5mbwhkk12dft" path="res://assets/npc/spider/1.png" id="13_gqmmt"]
 [ext_resource type="Texture2D" uid="uid://c1spj4xeq1llr" path="res://assets/npc/hat_guy/1.png" id="13_jbj1t"]
