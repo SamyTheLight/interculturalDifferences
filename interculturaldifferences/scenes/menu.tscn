@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dru2bpnyor350"]
+[gd_scene load_steps=3 format=3 uid="uid://dni66edf8paet"]
 
-[ext_resource type="Script" uid="uid://n8c2mogme85a" path="res://scripts/menu.gd" id="1_vjb58"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_vjb58"]
 [ext_resource type="Texture2D" uid="uid://bqqbdkfhbt6uw" path="res://assets/background/background.jpg" id="2_con2f"]
 
 [node name="menu" type="Node2D"]
