@@ -1,43 +1,100 @@
-[gd_scene load_steps=3 format=3 uid="uid://dni66edf8paet"]
+[gd_scene load_steps=17 format=3 uid="uid://dni66edf8paet"]
 
-[ext_resource type="Script" path="res://scripts/menu.gd" id="1_vjb58"]
-[ext_resource type="Texture2D" uid="uid://bqqbdkfhbt6uw" path="res://assets/background/background.jpg" id="2_con2f"]
+[ext_resource type="Script" uid="uid://n8c2mogme85a" path="res://scripts/menu.gd" id="1_vjb58"]
+[ext_resource type="Texture2D" uid="uid://c35r16lyfqkx0" path="res://assets/background/Ilustración_sin_título-1.png" id="2_4ytvr"]
+[ext_resource type="Texture2D" uid="uid://dn75e6odw256k" path="res://assets/background/Ilustración_sin_título-2.png" id="3_g3eks"]
+[ext_resource type="Texture2D" uid="uid://c1dcy8f3u71q3" path="res://assets/background/Ilustración_sin_título-11.png" id="4_ufwb2"]
+[ext_resource type="Texture2D" uid="uid://h1ttf87p4hyb" path="res://assets/background/Ilustración_sin_título-3.png" id="4_v86rl"]
+[ext_resource type="Texture2D" uid="uid://cyq3vxx4q1wj2" path="res://assets/background/Ilustración_sin_título-4.png" id="5_13sgg"]
+[ext_resource type="Texture2D" uid="uid://cglqb32ff6dfj" path="res://assets/background/Ilustración_sin_título-5.png" id="7_6cdou"]
+[ext_resource type="Texture2D" uid="uid://cp3jf36d6c8is" path="res://assets/background/Ilustración_sin_título-6.png" id="8_i42df"]
+[ext_resource type="Texture2D" uid="uid://5v8gw4ypps5i" path="res://assets/background/Ilustración_sin_título-7.png" id="9_7jp70"]
+[ext_resource type="Texture2D" uid="uid://crct7r5e21mkf" path="res://assets/background/Ilustración_sin_título-8.png" id="10_mxgkd"]
+[ext_resource type="Texture2D" uid="uid://c7tfthbq5t3ey" path="res://assets/background/Ilustración_sin_título-9.png" id="11_g6gyw"]
+[ext_resource type="Texture2D" uid="uid://bkcwrr7kcbyk6" path="res://assets/background/Ilustración_sin_título-10.png" id="12_3dmrc"]
+[ext_resource type="Texture2D" uid="uid://rwknrenhilcw" path="res://assets/menu_ui/Play.png" id="13_7jp70"]
+[ext_resource type="Texture2D" uid="uid://df7xjsdioynjr" path="res://assets/menu_ui/Quit.png" id="14_mxgkd"]
+[ext_resource type="Texture2D" uid="uid://cp0vwypnqh3rf" path="res://assets/menu_ui/Título juego.png" id="15_g6gyw"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_i6lef"]
+frames = 11
+speed_scale = 4.0
+frame_0/texture = ExtResource("2_4ytvr")
+frame_1/texture = ExtResource("3_g3eks")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4_v86rl")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("5_13sgg")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("7_6cdou")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("8_i42df")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("9_7jp70")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("10_mxgkd")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("11_g6gyw")
+frame_8/duration = 1.0
+frame_9/texture = ExtResource("12_3dmrc")
+frame_9/duration = 1.0
+frame_10/texture = ExtResource("4_ufwb2")
+frame_10/duration = 1.0
 
 [node name="menu" type="Node2D"]
 script = ExtResource("1_vjb58")
 
-[node name="fondo" type="Node2D" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Sprite2D" type="Sprite2D" parent="fondo"]
+[node name="fondo" type="Node2D" parent="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/fondo"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.8605, 16.2859)
+color = Color(0.341176, 0.282353, 0.321569, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/fondo"]
 texture_filter = 1
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("2_con2f")
+scale = Vector2(5.99646, 5.99646)
+texture = SubResource("AnimatedTexture_i6lef")
 centered = false
 
-[node name="Label" type="Label" parent="."]
-offset_left = 378.0
-offset_top = 235.0
-offset_right = 788.0
-offset_bottom = 304.0
-theme_override_font_sizes/font_size = 50
-text = "The Morse island"
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_g6gyw")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_left = 430.0
-offset_top = 429.0
-offset_right = 739.0
-offset_bottom = 559.0
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -204.0
+offset_right = 200.0
+grow_vertical = 0
+theme_override_constants/margin_left = 80
+theme_override_constants/margin_bottom = 150
 
-[node name="play" type="Button" parent="VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer"]
+custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "Play"
 
-[node name="exit" type="Button" parent="VBoxContainer"]
+[node name="play" type="TextureButton" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "Exit
-"
+texture_normal = ExtResource("13_7jp70")
+ignore_texture_size = true
+stretch_mode = 0
 
-[connection signal="pressed" from="VBoxContainer/play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
+[node name="quit" type="TextureButton" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+texture_normal = ExtResource("14_mxgkd")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
