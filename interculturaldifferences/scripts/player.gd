@@ -27,10 +27,14 @@ func _physics_process(delta):
 
 	# Salto
 	if Input.is_action_just_pressed("jump") and is_on_floor():
+		$AnimationPlayer.play("jumping")
 		velocity.y = jump_velocity
-		
-	# Rotar sprite según dirección
-	if direction != 0:
-		sprite.flip_h = direction < 0
+	#Rotar segun direccion
+	elif is_on_floor():
+		if direction != 0:
+			$AnimationPlayer.play("walking")
+			sprite.flip_h = direction < 0
+		elif is_on_floor():
+			$AnimationPlayer.play("RESET") 
 
 	move_and_slide()

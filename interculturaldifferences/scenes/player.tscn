@@ -1,21 +1,21 @@
-[gd_scene load_steps=9 format=3 uid="uid://dkrirybs4ixjr"]
+[gd_scene load_steps=23 format=3 uid="uid://dkrirybs4ixjr"]
 
 [ext_resource type="Script" uid="uid://bwxy4ewidulmy" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://dfnopxx0gxm2y" path="res://assets/character/jumping/1.png" id="2_a8ls1"]
 [ext_resource type="Texture2D" uid="uid://b53o8wf8plfpk" path="res://assets/character/standing/1.png" id="2_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://cv3turtcq30dy" path="res://assets/character/jumping/2.png" id="3_qfm1y"]
 [ext_resource type="Texture2D" uid="uid://cjhhttwdxlv6" path="res://assets/character/standing/2.png" id="3_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://csqvncymrk8px" path="res://assets/character/standing/3.png" id="4_fjrip"]
+[ext_resource type="Texture2D" uid="uid://c2ov0a8souge4" path="res://assets/character/walking/4.png" id="4_fulsm"]
 [ext_resource type="Texture2D" uid="uid://bolnmd74vwcb4" path="res://assets/character/standing/4.png" id="5_smehm"]
-
-[sub_resource type="AnimatedTexture" id="AnimatedTexture_ur7pv"]
-frames = 4
-speed_scale = 5.0
-frame_0/texture = ExtResource("2_qlg0r")
-frame_1/texture = ExtResource("3_tuyoq")
-frame_1/duration = 1.0
-frame_2/texture = ExtResource("4_fjrip")
-frame_2/duration = 1.0
-frame_3/texture = ExtResource("5_smehm")
-frame_3/duration = 1.0
+[ext_resource type="Texture2D" uid="uid://4173vwsqc63c" path="res://assets/character/jumping/3.png" id="9_4r5pv"]
+[ext_resource type="Texture2D" uid="uid://bthq0v3kea4sk" path="res://assets/character/jumping/4.png" id="10_60mlk"]
+[ext_resource type="Texture2D" uid="uid://cw6uvrmvfes13" path="res://assets/character/jumping/5.png" id="11_i4ail"]
+[ext_resource type="Texture2D" uid="uid://cvqxojjssg831" path="res://assets/character/jumping/6.png" id="12_a38lo"]
+[ext_resource type="Texture2D" uid="uid://btqivm74cdjrw" path="res://assets/character/jumping/7.png" id="13_4ni07"]
+[ext_resource type="Texture2D" uid="uid://b8a5s673dwwky" path="res://assets/character/walking/1.png" id="14_l71n6"]
+[ext_resource type="Texture2D" uid="uid://cabt2gnalgo8g" path="res://assets/character/walking/2.png" id="15_ke2ow"]
+[ext_resource type="Texture2D" uid="uid://ufgsx0avl1i" path="res://assets/character/walking/3.png" id="16_ujl30"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g2els"]
 radius = 20.0
@@ -23,12 +23,66 @@ height = 62.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
 
+[sub_resource type="Animation" id="Animation_pf23h"]
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.333, 0.667, 0.98),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_qlg0r"), ExtResource("3_tuyoq"), ExtResource("4_fjrip"), ExtResource("5_smehm")]
+}
+
+[sub_resource type="Animation" id="Animation_dt7fs"]
+resource_name = "jumping"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.167, 0.333, 0.5, 0.667, 0.833, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_a8ls1"), ExtResource("3_qfm1y"), ExtResource("9_4r5pv"), ExtResource("10_60mlk"), ExtResource("11_i4ail"), ExtResource("12_a38lo"), ExtResource("13_4ni07")]
+}
+
+[sub_resource type="Animation" id="Animation_31cv2"]
+resource_name = "walking"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.167, 0.333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("14_l71n6"), ExtResource("15_ke2ow"), ExtResource("16_ujl30"), ExtResource("4_fulsm")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wqfne"]
+_data = {
+&"RESET": SubResource("Animation_pf23h"),
+&"jumping": SubResource("Animation_dt7fs"),
+&"walking": SubResource("Animation_31cv2")
+}
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_g2els")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2.5288, 2.5288)
-texture = SubResource("AnimatedTexture_ur7pv")
+texture = ExtResource("2_qlg0r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_g2els")
@@ -43,3 +97,8 @@ collision_mask = 16
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Marker2D/ActionablaFinder"]
 scale = Vector2(7.18573, 2.88517)
 shape = SubResource("CircleShape2D_g2els")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_wqfne")
+}
