@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dks43je3mbqtw"]
+[gd_scene load_steps=16 format=3 uid="uid://dks43je3mbqtw"]
 
 [ext_resource type="Script" uid="uid://cxg0n0jfhgtvo" path="res://scripts/the_end.gd" id="1_hw2uy"]
 [ext_resource type="Texture2D" uid="uid://c35r16lyfqkx0" path="res://assets/background/Ilustración_sin_título-1.png" id="1_s5u8v"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://c7tfthbq5t3ey" path="res://assets/background/Ilustración_sin_título-9.png" id="10_tlpei"]
 [ext_resource type="Texture2D" uid="uid://bkcwrr7kcbyk6" path="res://assets/background/Ilustración_sin_título-10.png" id="11_4j0fh"]
 [ext_resource type="Texture2D" uid="uid://df7xjsdioynjr" path="res://assets/menu_ui/Quit.png" id="12_p61if"]
+[ext_resource type="Texture2D" uid="uid://c86r1yjbskbd7" path="res://assets/menu_ui/The end.png" id="14_ypv5i"]
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_hc6xi"]
 frames = 11
@@ -78,5 +79,18 @@ layout_mode = 2
 texture_normal = ExtResource("12_p61if")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 38.0
+offset_top = -191.0
+offset_right = 139.0
+offset_bottom = -155.0
+grow_vertical = 2
+scale = Vector2(4.54337, 6.3054)
+size_flags_horizontal = 0
+texture = ExtResource("14_ypv5i")
 
 [connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
