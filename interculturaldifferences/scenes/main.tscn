@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=4 uid="uid://4ytaonukr2xf"]
+[gd_scene load_steps=72 format=4 uid="uid://4ytaonukr2xf"]
 
 [ext_resource type="Script" uid="uid://coxxm4nr2gu08" path="res://scenes/main.gd" id="1_dgi5k"]
 [ext_resource type="Texture2D" uid="uid://b150xqmv187d0" path="res://assets/tiles/cloud1.png" id="2_cjqg0"]
@@ -38,11 +38,12 @@
 [ext_resource type="Texture2D" uid="uid://dovtj6yfj2wpq" path="res://assets/tiles/boat&water/Barcoymar_-9.png" id="32_5poiv"]
 [ext_resource type="Texture2D" uid="uid://cptxhdj76m6tc" path="res://assets/tiles/boat&water/Barcoymar_-10.png" id="33_2cjbq"]
 [ext_resource type="Resource" uid="uid://c3137frulidws" path="res://dialogues/lostGuy.dialogue" id="35_c6pm6"]
-[ext_resource type="Texture2D" uid="uid://dqk37ph6fad3v" path="res://assets/npc/Cosoraro/1.png" id="35_pibwh"]
-[ext_resource type="Texture2D" uid="uid://cy2p13lrmjckb" path="res://assets/npc/Cosoraro/2.png" id="36_c6pm6"]
-[ext_resource type="Texture2D" uid="uid://do4pkk0nw8yjw" path="res://assets/npc/Cosoraro/3.png" id="37_5he1u"]
-[ext_resource type="Texture2D" uid="uid://cqv5np8wh3136" path="res://assets/npc/Cosoraro/4.png" id="38_5poiv"]
-[ext_resource type="PackedScene" uid="uid://6im0gonf4m1" path="res://scenes/object.tscn" id="41_2cjbq"]
+[ext_resource type="Texture2D" uid="uid://b8rxdasusxh6p" path="res://assets/npc/Random2/Ilustración_sin_título-1.png" id="37_txyw0"]
+[ext_resource type="Texture2D" uid="uid://cm3fv6bgvw82s" path="res://assets/npc/Random2/Ilustración_sin_título-2.png" id="38_vc5cj"]
+[ext_resource type="Texture2D" uid="uid://bbjncnhi6lwsw" path="res://assets/npc/Random2/Ilustración_sin_título-3.png" id="39_nvyfr"]
+[ext_resource type="Texture2D" uid="uid://3j2rdpuih0pd" path="res://assets/npc/Random2/Ilustración_sin_título-4.png" id="40_ty1g6"]
+[ext_resource type="PackedScene" path="res://scenes/object.tscn" id="41_2cjbq"]
+[ext_resource type="Resource" uid="uid://cx5t0cc2yw3hj" path="res://dialogues/cityGuy.dialogue" id="41_j2jfr"]
 [ext_resource type="Texture2D" uid="uid://b4x65easb77ik" path="res://assets/tiles/plot.png" id="43_chjal"]
 [ext_resource type="AudioStream" uid="uid://ceiqgflsmgi0i" path="res://assets/sounds/water_sound.mp3" id="45_vchkt"]
 
@@ -809,12 +810,12 @@ frame_3/duration = 1.0
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_2cjbq"]
 frames = 4
-frame_0/texture = ExtResource("35_pibwh")
-frame_1/texture = ExtResource("36_c6pm6")
+frame_0/texture = ExtResource("37_txyw0")
+frame_1/texture = ExtResource("38_vc5cj")
 frame_1/duration = 1.0
-frame_2/texture = ExtResource("37_5he1u")
+frame_2/texture = ExtResource("39_nvyfr")
 frame_2/duration = 1.0
-frame_3/texture = ExtResource("38_5poiv")
+frame_3/texture = ExtResource("40_ty1g6")
 frame_3/duration = 1.0
 
 [node name="Main" type="Node2D"]
@@ -878,7 +879,6 @@ frame_progress = 0.499862
 
 [node name="BuildingBack" type="TileMapLayer" parent="."]
 position = Vector2(1149, 193)
-scale = Vector2(1, 1)
 tile_map_data = PackedByteArray("AAD9//n/AQACAAAAAAD9//r/AQACAAAAAAD9//v/AQACAAAAAAD9//z/AQACAAAAAAD9//3/AQACAAAAAAD9//7/AQACAAAAAAD9////AQACAAAAAAD9/wAAAQACAAAAAAD9/wEAAQACAAAAAAD9/wIAAQACAAAAAAD+//n/AQACAAAAAAD+//r/AQACAAAAAAD+//v/AQACAAAAAAD+//z/AQACAAAAAAD+//3/AQACAAAAAAD+//7/AQACAAAAAAD+////AQACAAAAAAD+/wAAAQACAAAAAAD+/wEAAQACAAAAAAD+/wIAAQACAAAAAAD///n/AQACAAAAAAD///r/AQACAAAAAAD///v/AQACAAAAAAD///z/AQACAAAAAAD///3/AQACAAAAAAD///7/AQACAAAAAAD/////AQACAAAAAAD//wAAAQACAAAAAAD//wEAAQACAAAAAAD//wIAAQACAAAAAAAAAPn/AQACAAAAAAAAAPr/AQACAAAAAAAAAPv/AQACAAAAAAAAAPz/AQACAAAAAAAAAP3/AQACAAAAAAAAAP7/AQACAAAAAAAAAP//AQACAAAAAAAAAAAAAQACAAAAAAAAAAEAAQACAAAAAAAAAAIAAQACAAAAAAABAPn/AQACAAAAAAABAPr/AQACAAAAAAABAPv/AQACAAAAAAABAPz/AQACAAAAAAABAP3/AQACAAAAAAABAP7/AQACAAAAAAABAP//AQACAAAAAAABAAAAAQACAAAAAAABAAEAAQACAAAAAAABAAIAAQACAAAAAAACAPn/AQACAAAAAAACAPr/AQACAAAAAAACAPv/AQACAAAAAAACAPz/AQACAAAAAAACAP3/AQACAAAAAAACAP7/AQACAAAAAAACAP//AQACAAAAAAACAAAAAQACAAAAAAACAAEAAQACAAAAAAACAAIAAQACAAAAAAD9//j/AQADAAIAAAACAPj/AQAAAAMAAAD+//j/AQAEAAIAAAD///j/AQAEAAIAAAAAAPj/AQAEAAIAAAABAPj/AQAEAAIAAAANAP7/AQACAAAAAAANAP//AQACAAAAAAANAAAAAQACAAAAAAANAAEAAQACAAAAAAANAAIAAQACAAAAAAAOAP7/AQACAAAAAAAOAP//AQACAAAAAAAOAAAAAQACAAAAAAAOAAEAAQACAAAAAAAOAAIAAQACAAAAAAAPAP7/AQACAAAAAAAPAP//AQACAAAAAAAPAAAAAQACAAAAAAAPAAEAAQACAAAAAAAPAAIAAQACAAAAAAAQAP7/AQACAAAAAAAQAP//AQACAAAAAAAQAAAAAQACAAAAAAAQAAEAAQACAAAAAAAQAAIAAQACAAAAAAAWAP3/AQACAAAAAAAWAP7/AQACAAAAAAAWAP//AQACAAAAAAAWAAAAAQACAAAAAAAWAAEAAQACAAAAAAAXAP3/AQACAAAAAAAXAP7/AQACAAAAAAAXAP//AQACAAAAAAAXAAAAAQACAAAAAAAXAAEAAQACAAAAAAAYAP3/AQACAAAAAAAYAP7/AQACAAAAAAAYAP//AQACAAAAAAAYAAAAAQACAAAAAAAYAAEAAQACAAAAAAAZAP3/AQACAAAAAAAZAP7/AQACAAAAAAAZAP//AQACAAAAAAAZAAAAAQACAAAAAAAZAAEAAQACAAAAAAAcAP7/AQACAAAAAAAcAP//AQACAAAAAAAcAAAAAQACAAAAAAAcAAEAAQACAAAAAAAdAP7/AQACAAAAAAAdAP//AQACAAAAAAAdAAAAAQACAAAAAAAdAAEAAQACAAAAAAAeAP7/AQACAAAAAAAeAP//AQACAAAAAAAeAAAAAQACAAAAAAAeAAEAAQACAAAAAAAfAP7/AQACAAAAAAAfAP//AQACAAAAAAAfAAAAAQACAAAAAAAfAAEAAQACAAAAAADy////AQACAAAAAADy/wAAAQACAAAAAADy/wEAAQACAAAAAADy/wIAAQACAAAAAADy/wMAAQACAAAAAADy/wQAAQACAAAAAADz////AQACAAAAAADz/wAAAQACAAAAAADz/wEAAQACAAAAAADz/wIAAQACAAAAAADz/wMAAQACAAAAAADz/wQAAQACAAAAAAD0////AQACAAAAAAD0/wAAAQACAAAAAAD0/wEAAQACAAAAAAD0/wIAAQACAAAAAAD0/wMAAQACAAAAAAD0/wQAAQACAAAAAAD1////AQACAAAAAAD1/wAAAQACAAAAAAD1/wEAAQACAAAAAAD1/wIAAQACAAAAAAD1/wMAAQACAAAAAAD1/wQAAQACAAAAAADy//7/AQADAAIAAAD1//7/AQAAAAMAAADz//7/AQAEAAIAAAD0//7/AQAEAAIAAAANAP3/AQADAAIAAAAOAP3/AQAEAAIAAAAPAP3/AQAEAAIAAAAQAP3/AQAAAAMAAAAWAPz/AQADAAIAAAAXAPz/AQAEAAIAAAAYAPz/AQAEAAIAAAAZAPz/AQAAAAMAAAAcAP3/AQADAAIAAAAdAP3/AQAEAAIAAAAeAP3/AQAEAAIAAAAfAP3/AQAAAAMAAAA=")
 tile_set = SubResource("TileSet_kmb1v")
 
@@ -933,10 +933,16 @@ scale = Vector2(3.00265, 3.00265)
 dialogue_resource = ExtResource("30_dgi5k")
 texture = SubResource("AnimatedTexture_gqmmt")
 
-[node name="Npc" parent="." instance=ExtResource("8_85g3d")]
+[node name="LostGuy" parent="." instance=ExtResource("8_85g3d")]
 position = Vector2(3242, 837)
 scale = Vector2(1.95519, 1.95519)
 dialogue_resource = ExtResource("35_c6pm6")
+texture = SubResource("AnimatedTexture_2cjbq")
+
+[node name="LostGuy2" parent="." instance=ExtResource("8_85g3d")]
+position = Vector2(2978, 237)
+scale = Vector2(3.05365, 3.05365)
+dialogue_resource = ExtResource("41_j2jfr")
 texture = SubResource("AnimatedTexture_2cjbq")
 
 [node name="Objects" parent="." instance=ExtResource("41_2cjbq")]

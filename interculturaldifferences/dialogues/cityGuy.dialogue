@@ -1,0 +1,5 @@
+~ start
+City guy: You should'nt go there...
+if not Language.known_letters['s'] or not Language.known_letters['l']
+	set Language.known_letters.merge({'s': true, 'l': true}, true)
+=> END

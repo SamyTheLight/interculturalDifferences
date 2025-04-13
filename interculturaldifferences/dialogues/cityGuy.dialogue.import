@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://cx5t0cc2yw3hj"
+path="res://.godot/imported/cityGuy.dialogue-18f3b34e830e4e929da627931007d165.tres"
+
+[deps]
+
+source_file="res://dialogues/cityGuy.dialogue"
+dest_files=["res://.godot/imported/cityGuy.dialogue-18f3b34e830e4e929da627931007d165.tres"]
+
+[params]
+
+defaults=true
