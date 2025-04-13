@@ -1,9 +1,13 @@
 ~ start
-HatGuy: Do you like my hat?
+Hat Guy: Do you like my hat?
 if not GLOBAL.important_words['do'] or not GLOBAL.important_words['you']
 	- Those's letters sounds like 'do' and 'you'
 	set Language.known_letters.merge({"d": true, "o": true, "y": true, "u": true}, true)
+	set Language.level += 1
 	set GLOBAL.important_words['do'] = true
 	set GLOBAL.important_words['you'] = true
-	HatGuy: Do you like my hat?
+	Hat Guy: Do you like my hat?
+if Language.level == 6
+	- Yeah!
+		Hat guy: Thank You!
 => END

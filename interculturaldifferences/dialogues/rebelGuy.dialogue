@@ -1,0 +1,11 @@
+~ start
+Rebel guy: My quirky friend lost his zip here
+Rebel guy: Did you see it?
+if not Language.known_letters['m'] or not Language.known_letters['f'] or not Language.known_letters['k']  or not Language.known_letters['q']  or not Language.known_letters['v']  or not Language.known_letters['z']
+	- Those's letters sounds like 'm' and...
+	set Language.known_letters.merge({'m': true, 'q': true, 'v': true, 'z': true, 'f': true, 'k': true}, true)
+	set Language.level += 1
+if Language.level == 6
+	- No, sorry
+	Rebel guy: If you see it, tell me.
+=> END

@@ -1,10 +1,14 @@
 ~ start
 Spider: I want to go to a party!
 if not GLOBAL.important_words['want'] or  not GLOBAL.important_words['to'] or  not GLOBAL.important_words['go']
-	- Those's letters sounds like 'want', 'to' and ...'go'?
-	set Language.known_letters.merge({"w": true,"n": true, "g": true, "a": true, "t": true}, true)
+	- Those's letters sounds like 'want', 'to', the 'p' and ...'go'?
+	set Language.known_letters.merge({"w": true,"n": true, "g": true, "a": true, "t": true, "p": true}, true)
+	set Language.level += 1
 	set GLOBAL.important_words['want'] = true
 	set GLOBAL.important_words['to'] = true
 	set GLOBAL.important_words['go'] = true
 	Spider: I want to go to a party!
+if Language.level == 6
+	- Me too!
+	Spider: Yay!
 => END

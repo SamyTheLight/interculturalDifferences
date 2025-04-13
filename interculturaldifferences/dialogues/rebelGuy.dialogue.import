@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://bbbupjpu6y2n0"
+path="res://.godot/imported/rebelGuy.dialogue-1ef6f811db08a1684ebeaa5906a7ce70.tres"
+
+[deps]
+
+source_file="res://dialogues/rebelGuy.dialogue"
+dest_files=["res://.godot/imported/rebelGuy.dialogue-1ef6f811db08a1684ebeaa5906a7ce70.tres"]
+
+[params]
+
+defaults=true

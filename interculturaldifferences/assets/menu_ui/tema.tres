@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://yiu1alard76f"]
+
+[ext_resource type="FontFile" uid="uid://wvqsfe2lih4h" path="res://assets/menu_ui/Pixelate-Regular.ttf" id="1_12iko"]
+
+[resource]
+Label/fonts/font = ExtResource("1_12iko")

@@ -3,6 +3,10 @@ Lost guy: Where is the library?
 if not GLOBAL.important_words['where']
 	- Those's letters sounds like 'Where'
 	set Language.known_letters.merge({"w": true, "h": true, "e": true, "r": true}, true)
+	set Language.level += 1
 	set GLOBAL.important_words['where'] = true
 	Lost guy: Where is the library?
+if Language.level == 6
+	- Up, in the city
+	Lost guy: Thanks!
 => END

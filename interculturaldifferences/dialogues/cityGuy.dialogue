@@ -1,5 +1,11 @@
 ~ start
-City guy: You should'nt go there...
-if not Language.known_letters['s'] or not Language.known_letters['l']
-	set Language.known_letters.merge({'s': true, 'l': true}, true)
+City guy: You should'nt go there... 
+City guy: is dangerous
+if not Language.known_letters['s'] or not Language.known_letters['l'] or not Language.known_letters['a']
+	- Those's letters sounds like the 's', 'a' and 'l'
+	set Language.known_letters.merge({'s': true, 'l': true, 'a': true}, true)
+	set Language.level += 1
+if Language.level == 6
+	- Why?
+	City guy: There's a lot of monsters there
 => END

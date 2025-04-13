@@ -1,5 +1,7 @@
 extends Node
 
+var level = 0
+
 const morse = {
 	"a": ".-",
 	"b": "-...",

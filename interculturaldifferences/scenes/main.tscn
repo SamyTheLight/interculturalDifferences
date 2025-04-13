@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=4 uid="uid://4ytaonukr2xf"]
+[gd_scene load_steps=89 format=4 uid="uid://4ytaonukr2xf"]
 
 [ext_resource type="Script" uid="uid://coxxm4nr2gu08" path="res://scenes/main.gd" id="1_dgi5k"]
 [ext_resource type="Texture2D" uid="uid://b150xqmv187d0" path="res://assets/tiles/cloud1.png" id="2_cjqg0"]
@@ -18,14 +18,10 @@
 [ext_resource type="Texture2D" uid="uid://c7k6kntl14ljp" path="res://assets/tiles/TileSetBackgroundOscuro.png" id="13_5poiv"]
 [ext_resource type="Texture2D" uid="uid://b5mbwhkk12dft" path="res://assets/npc/spider/1.png" id="13_gqmmt"]
 [ext_resource type="Texture2D" uid="uid://esd36r8ld7x8" path="res://assets/tiles/TileSetBackground.png" id="13_j8jky"]
-[ext_resource type="Texture2D" uid="uid://c1spj4xeq1llr" path="res://assets/npc/hat_guy/1.png" id="13_jbj1t"]
-[ext_resource type="Texture2D" uid="uid://cuqwrpbh440yf" path="res://assets/npc/hat_guy/2.png" id="14_muem4"]
 [ext_resource type="Texture2D" uid="uid://bwddnn86a5bcv" path="res://assets/npc/spider/2.png" id="14_yc10j"]
-[ext_resource type="Texture2D" uid="uid://bvnnovoxuvxjy" path="res://assets/npc/hat_guy/3.png" id="15_dp3eg"]
 [ext_resource type="Texture2D" uid="uid://duall0niypxrs" path="res://assets/npc/spider/3.png" id="15_jscy8"]
-[ext_resource type="Texture2D" uid="uid://bu40kaseygtg8" path="res://assets/npc/hat_guy/4.png" id="16_0ld40"]
 [ext_resource type="Texture2D" uid="uid://0ovllldas3sj" path="res://assets/npc/spider/4.png" id="16_pm3ni"]
-[ext_resource type="Resource" uid="uid://buo3vbdyduph3" path="res://dialogues/spider.dialogue" id="19_5he1u"]
+[ext_resource type="Resource" uid="uid://buo3vbdyduph3" path="res://dialogues/spider.dialogue" id="20_nvyfr"]
 [ext_resource type="Texture2D" uid="uid://cbjpqg8leg784" path="res://assets/tiles/boat&water/Barcoymar_-1.png" id="24_5q0nq"]
 [ext_resource type="Texture2D" uid="uid://cyojwet5dv4bn" path="res://assets/tiles/boat&water/Barcoymar_-2.png" id="25_dgi5k"]
 [ext_resource type="Texture2D" uid="uid://dk87r7u6u1vp7" path="res://assets/tiles/boat&water/Barcoymar_-3.png" id="26_j8jky"]
@@ -36,16 +32,34 @@
 [ext_resource type="Resource" uid="uid://8hdtkkq8wpm0" path="res://dialogues/hatGuy.dialogue" id="30_dgi5k"]
 [ext_resource type="Texture2D" uid="uid://caymeeeag6poi" path="res://assets/tiles/boat&water/Barcoymar_-8.png" id="31_5he1u"]
 [ext_resource type="Texture2D" uid="uid://dovtj6yfj2wpq" path="res://assets/tiles/boat&water/Barcoymar_-9.png" id="32_5poiv"]
+[ext_resource type="Texture2D" uid="uid://c1spj4xeq1llr" path="res://assets/npc/hat_guy/1.png" id="32_bu4jf"]
+[ext_resource type="Texture2D" uid="uid://rb564ghvkwwq" path="res://assets/npc/Random3/Ilustración_sin_título-1.png" id="32_vc5cj"]
 [ext_resource type="Texture2D" uid="uid://cptxhdj76m6tc" path="res://assets/tiles/boat&water/Barcoymar_-10.png" id="33_2cjbq"]
+[ext_resource type="Texture2D" uid="uid://khost18js4na" path="res://assets/npc/Random3/Ilustración_sin_título-2.png" id="33_nvyfr"]
+[ext_resource type="Texture2D" uid="uid://cuqwrpbh440yf" path="res://assets/npc/hat_guy/2.png" id="33_o7ddy"]
+[ext_resource type="Texture2D" uid="uid://bvnnovoxuvxjy" path="res://assets/npc/hat_guy/3.png" id="34_0loja"]
+[ext_resource type="Texture2D" uid="uid://c4nluhao5rqf5" path="res://assets/npc/Random3/Ilustración_sin_título-3.png" id="34_ty1g6"]
 [ext_resource type="Resource" uid="uid://c3137frulidws" path="res://dialogues/lostGuy.dialogue" id="35_c6pm6"]
-[ext_resource type="Texture2D" uid="uid://b8rxdasusxh6p" path="res://assets/npc/Random2/Ilustración_sin_título-1.png" id="37_txyw0"]
-[ext_resource type="Texture2D" uid="uid://cm3fv6bgvw82s" path="res://assets/npc/Random2/Ilustración_sin_título-2.png" id="38_vc5cj"]
-[ext_resource type="Texture2D" uid="uid://bbjncnhi6lwsw" path="res://assets/npc/Random2/Ilustración_sin_título-3.png" id="39_nvyfr"]
-[ext_resource type="Texture2D" uid="uid://3j2rdpuih0pd" path="res://assets/npc/Random2/Ilustración_sin_título-4.png" id="40_ty1g6"]
-[ext_resource type="PackedScene" path="res://scenes/object.tscn" id="41_2cjbq"]
+[ext_resource type="Texture2D" uid="uid://bu40kaseygtg8" path="res://assets/npc/hat_guy/4.png" id="35_ids8r"]
+[ext_resource type="Texture2D" uid="uid://ci6ww4snvr06t" path="res://assets/npc/Random3/Ilustración_sin_título-4.png" id="35_j2jfr"]
+[ext_resource type="Resource" uid="uid://67l6v25btrdh" path="res://dialogues/houseGuy.dialogue" id="36_bjg73"]
+[ext_resource type="Texture2D" uid="uid://dtpilhbvkmq3q" path="res://assets/npc/Random1/Ilustración_sin_título-1.png" id="38_nvyfr"]
+[ext_resource type="Texture2D" uid="uid://pbh2nm8xlyko" path="res://assets/npc/Random1/Ilustración_sin_título-2.png" id="39_ty1g6"]
+[ext_resource type="Texture2D" uid="uid://d3roxrwer36e0" path="res://assets/npc/Random1/Ilustración_sin_título-3.png" id="40_j2jfr"]
+[ext_resource type="PackedScene" uid="uid://6im0gonf4m1" path="res://scenes/object.tscn" id="41_2cjbq"]
+[ext_resource type="Texture2D" uid="uid://0berias14ecl" path="res://assets/npc/Random1/Ilustración_sin_título-4.png" id="41_bjg73"]
 [ext_resource type="Resource" uid="uid://cx5t0cc2yw3hj" path="res://dialogues/cityGuy.dialogue" id="41_j2jfr"]
+[ext_resource type="Texture2D" uid="uid://dqk37ph6fad3v" path="res://assets/npc/Cosoraro/1.png" id="42_kf5aa"]
+[ext_resource type="Resource" uid="uid://bbbupjpu6y2n0" path="res://dialogues/rebelGuy.dialogue" id="43_bu4jf"]
 [ext_resource type="Texture2D" uid="uid://b4x65easb77ik" path="res://assets/tiles/plot.png" id="43_chjal"]
+[ext_resource type="Texture2D" uid="uid://cy2p13lrmjckb" path="res://assets/npc/Cosoraro/2.png" id="43_t5ykj"]
+[ext_resource type="Texture2D" uid="uid://do4pkk0nw8yjw" path="res://assets/npc/Cosoraro/3.png" id="44_e755i"]
+[ext_resource type="Texture2D" uid="uid://cqv5np8wh3136" path="res://assets/npc/Cosoraro/4.png" id="45_ro3en"]
 [ext_resource type="AudioStream" uid="uid://ceiqgflsmgi0i" path="res://assets/sounds/water_sound.mp3" id="45_vchkt"]
+[ext_resource type="Texture2D" uid="uid://b8rxdasusxh6p" path="res://assets/npc/Random2/Ilustración_sin_título-1.png" id="52_od4ux"]
+[ext_resource type="Texture2D" uid="uid://cm3fv6bgvw82s" path="res://assets/npc/Random2/Ilustración_sin_título-2.png" id="53_xhfw6"]
+[ext_resource type="Texture2D" uid="uid://bbjncnhi6lwsw" path="res://assets/npc/Random2/Ilustración_sin_título-3.png" id="54_1epgm"]
+[ext_resource type="Texture2D" uid="uid://3j2rdpuih0pd" path="res://assets/npc/Random2/Ilustración_sin_título-4.png" id="55_152kg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_txyw0"]
 texture = ExtResource("2_cjqg0")
@@ -798,24 +812,54 @@ frame_3/duration = 1.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dgi5k"]
 size = Vector2(20, 141.238)
 
-[sub_resource type="AnimatedTexture" id="AnimatedTexture_gqmmt"]
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_dnhof"]
 frames = 4
-frame_0/texture = ExtResource("13_jbj1t")
-frame_1/texture = ExtResource("14_muem4")
+frame_0/texture = ExtResource("32_bu4jf")
+frame_1/texture = ExtResource("33_o7ddy")
 frame_1/duration = 1.0
-frame_2/texture = ExtResource("15_dp3eg")
+frame_2/texture = ExtResource("34_0loja")
 frame_2/duration = 1.0
-frame_3/texture = ExtResource("16_0ld40")
+frame_3/texture = ExtResource("35_ids8r")
 frame_3/duration = 1.0
 
-[sub_resource type="AnimatedTexture" id="AnimatedTexture_2cjbq"]
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_gqmmt"]
 frames = 4
-frame_0/texture = ExtResource("37_txyw0")
-frame_1/texture = ExtResource("38_vc5cj")
+frame_0/texture = ExtResource("32_vc5cj")
+frame_1/texture = ExtResource("33_nvyfr")
 frame_1/duration = 1.0
-frame_2/texture = ExtResource("39_nvyfr")
+frame_2/texture = ExtResource("34_ty1g6")
 frame_2/duration = 1.0
-frame_3/texture = ExtResource("40_ty1g6")
+frame_3/texture = ExtResource("35_j2jfr")
+frame_3/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_r4e17"]
+frames = 4
+frame_0/texture = ExtResource("42_kf5aa")
+frame_1/texture = ExtResource("43_t5ykj")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("44_e755i")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("45_ro3en")
+frame_3/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_y57op"]
+frames = 4
+frame_0/texture = ExtResource("38_nvyfr")
+frame_1/texture = ExtResource("39_ty1g6")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("40_j2jfr")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("41_bjg73")
+frame_3/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_mlv25"]
+frames = 4
+frame_0/texture = ExtResource("52_od4ux")
+frame_1/texture = ExtResource("53_xhfw6")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("54_1epgm")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("55_152kg")
 frame_3/duration = 1.0
 
 [node name="Main" type="Node2D"]
@@ -908,7 +952,7 @@ tile_set = SubResource("TileSet_yq6so")
 [node name="Spider" parent="." instance=ExtResource("8_85g3d")]
 position = Vector2(5161, -494)
 scale = Vector2(2.83195, 2.51937)
-dialogue_resource = ExtResource("19_5he1u")
+dialogue_resource = ExtResource("20_nvyfr")
 texture = SubResource("AnimatedTexture_y6deb")
 
 [node name="Barquero" parent="." instance=ExtResource("8_85g3d")]
@@ -931,19 +975,31 @@ object_to_follow = NodePath("../Player")
 position = Vector2(1457, 304)
 scale = Vector2(3.00265, 3.00265)
 dialogue_resource = ExtResource("30_dgi5k")
+texture = SubResource("AnimatedTexture_dnhof")
+
+[node name="Hatguy2" parent="." instance=ExtResource("8_85g3d")]
+position = Vector2(876, 304)
+scale = Vector2(3.00265, 3.00265)
+dialogue_resource = ExtResource("36_bjg73")
 texture = SubResource("AnimatedTexture_gqmmt")
 
 [node name="LostGuy" parent="." instance=ExtResource("8_85g3d")]
 position = Vector2(3242, 837)
 scale = Vector2(1.95519, 1.95519)
 dialogue_resource = ExtResource("35_c6pm6")
-texture = SubResource("AnimatedTexture_2cjbq")
+texture = SubResource("AnimatedTexture_r4e17")
 
 [node name="LostGuy2" parent="." instance=ExtResource("8_85g3d")]
 position = Vector2(2978, 237)
 scale = Vector2(3.05365, 3.05365)
 dialogue_resource = ExtResource("41_j2jfr")
-texture = SubResource("AnimatedTexture_2cjbq")
+texture = SubResource("AnimatedTexture_y57op")
+
+[node name="LostGuy3" parent="." instance=ExtResource("8_85g3d")]
+position = Vector2(5948, 202)
+scale = Vector2(3.05365, 3.05365)
+dialogue_resource = ExtResource("43_bu4jf")
+texture = SubResource("AnimatedTexture_mlv25")
 
 [node name="Objects" parent="." instance=ExtResource("41_2cjbq")]
 position = Vector2(1255, 281)

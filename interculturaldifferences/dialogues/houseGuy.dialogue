@@ -1,0 +1,9 @@
+~ start
+House guy: This is our land, go away
+if not Language.known_letters['b'] or not Language.known_letters['c'] or not Language.known_letters['i'] or not Language.known_letters['j']
+	- That letter sounds like the 'i'
+	set Language.known_letters.merge({'b': true, 'c': true, 'i': true, 'j': true}, true)
+	set Language.level += 1
+if Language.level == 6
+	- ....
+=> END
