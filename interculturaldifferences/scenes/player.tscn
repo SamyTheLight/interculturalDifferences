@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dkrirybs4ixjr"]
+[gd_scene load_steps=24 format=3 uid="uid://dkrirybs4ixjr"]
 
 [ext_resource type="Script" uid="uid://bwxy4ewidulmy" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://dfnopxx0gxm2y" path="res://assets/character/jumping/1.png" id="2_a8ls1"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://b8a5s673dwwky" path="res://assets/character/walking/1.png" id="14_l71n6"]
 [ext_resource type="Texture2D" uid="uid://cabt2gnalgo8g" path="res://assets/character/walking/2.png" id="15_ke2ow"]
 [ext_resource type="Texture2D" uid="uid://ufgsx0avl1i" path="res://assets/character/walking/3.png" id="16_ujl30"]
+[ext_resource type="AudioStream" uid="uid://bd5nrk8sqbnke" path="res://assets/sounds/loud-footsteps.mp3" id="17_qfm1y"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g2els"]
 radius = 20.0
@@ -102,3 +103,6 @@ shape = SubResource("CircleShape2D_g2els")
 libraries = {
 &"": SubResource("AnimationLibrary_wqfne")
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_qfm1y")
