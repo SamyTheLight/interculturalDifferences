@@ -82,10 +82,12 @@ _data = {
 script = ExtResource("1_g2els")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(2.5288, 2.5288)
+scale = Vector2(2.22616, 2.22616)
 texture = ExtResource("2_qlg0r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2)
+scale = Vector2(0.955552, 0.955552)
 shape = SubResource("CapsuleShape2D_g2els")
 
 [node name="Marker2D" type="Marker2D" parent="."]
