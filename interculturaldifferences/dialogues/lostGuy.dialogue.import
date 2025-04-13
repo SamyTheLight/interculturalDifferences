@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://c3137frulidws"
+path="res://.godot/imported/lostGuy.dialogue-649bfd898a6a1b1e47fdf15627d1e54e.tres"
+
+[deps]
+
+source_file="res://dialogues/lostGuy.dialogue"
+dest_files=["res://.godot/imported/lostGuy.dialogue-649bfd898a6a1b1e47fdf15627d1e54e.tres"]
+
+[params]
+
+defaults=true
