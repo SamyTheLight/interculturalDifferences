@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="InterculturalDifferences"
+config/name="TheMorseCrossing"
 run/main_scene="uid://dni66edf8paet"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://b53o8wf8plfpk"
 
 [autoload]
 

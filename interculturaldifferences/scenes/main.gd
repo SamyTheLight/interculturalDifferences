@@ -1,6 +1,8 @@
 extends Node2D
 
 func _ready() -> void:
+	await get_tree().create_timer(1.0).timeout
+	$AnimationPlayer.play("entry")
 	$AnimatedSprite2D.play("default")
 	GLOBAL.the_end.connect(_on_the_end)
 	

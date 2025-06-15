@@ -93,4 +93,11 @@ scale = Vector2(4.54337, 6.3054)
 size_flags_horizontal = 0
 texture = ExtResource("14_ypv5i")
 
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 8.0
+offset_top = 599.0
+offset_right = 752.0
+offset_bottom = 639.0
+text = "Made by: Javi, Aida, Maiwenn, Samuel and Camilo"
+
 [connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]

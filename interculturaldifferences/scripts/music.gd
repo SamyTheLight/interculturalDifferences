@@ -22,3 +22,4 @@ func _on_body_entered(body: Node2D) -> void:
 		is_playing_a = !is_playing_a
 			
 		music_player.play()
+		music_player.stream.loop = true

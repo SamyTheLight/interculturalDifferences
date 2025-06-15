@@ -3,4 +3,5 @@
 [ext_resource type="FontFile" uid="uid://wvqsfe2lih4h" path="res://assets/menu_ui/Pixelate-Regular.ttf" id="1_12iko"]
 
 [resource]
+Label/font_sizes/font_size = 40
 Label/fonts/font = ExtResource("1_12iko")

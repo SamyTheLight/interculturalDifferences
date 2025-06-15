@@ -1,5 +1,5 @@
 ~ start
-Nathan: Where do you want to go?
+Boatman: Where do you want to go?
 if GLOBAL.important_words['where'] and GLOBAL.important_words['do'] and GLOBAL.important_words['you'] and GLOBAL.important_words['want'] and GLOBAL.important_words['to'] and GLOBAL.important_words['go']
 	- To my home!
 	set GLOBAL.end_trigger = true
